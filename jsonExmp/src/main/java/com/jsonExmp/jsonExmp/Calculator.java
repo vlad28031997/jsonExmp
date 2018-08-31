@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class Kalk {
+public class Calculator {
 
-    @RequestMapping(value = "/kalk",method = RequestMethod.POST)
-    public ResponseEntity pro(@RequestBody Resh resh1) {
-        return new ResponseEntity(resh1.reshenie(), HttpStatus.OK);
+    @RequestMapping(value = "/calculator",method = RequestMethod.POST)
+    public ResponseEntity act(@RequestBody Source source1) {
+
+        return new ResponseEntity(source1.decision(), HttpStatus.OK);
     }
 
 
